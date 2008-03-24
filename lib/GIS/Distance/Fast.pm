@@ -29,24 +29,35 @@ directories all over the place.
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 1;
 __END__
 
 =head1 FORMULAS
 
-L<GID::Distance::Formula::Cosine::Fast>
+L<GIS::Distance::Formula::Cosine::Fast>
 
-L<GID::Distance::Formula::Haversine::Fast>
+L<GIS::Distance::Formula::Haversine::Fast>
 
-L<GID::Distance::Formula::Vincenty::Fast>
+L<GIS::Distance::Formula::Vincenty::Fast>
 
 =head1 BUGS
 
 The L<GIS::Distance::Formula::Vincenty::Fast> produces slightly different results than
 L<GIS::Distance::Formula::Vincenty>.  Read the POD for L<GIS::Distance::Formula::Vincenty::Fast>
 for details.
+
+=head1 TEST COVERAGE
+
+  ---------------------------- ------ ------ ------ ------ ------ ------ ------
+  File                           stmt   bran   cond    sub    pod   time  total
+  ---------------------------- ------ ------ ------ ------ ------ ------ ------
+  ...ce/Formula/Cosine/Fast.pm  100.0    n/a    n/a  100.0  100.0   37.4  100.0
+  ...Formula/Haversine/Fast.pm  100.0    n/a    n/a  100.0  100.0   25.6  100.0
+  .../Formula/Vincenty/Fast.pm  100.0    n/a    n/a  100.0  100.0   37.0  100.0
+  Total                         100.0    n/a    n/a  100.0  100.0  100.0  100.0
+  ---------------------------- ------ ------ ------ ------ ------ ------ ------
 
 =head1 AUTHOR
 
