@@ -25,4 +25,4 @@ resources:
   homepage: http://github.com/bluefeet/gis-distance-fast/tree
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bluefeet/gis-distance-fast.git
-version: 0.04
+version: 0.05
