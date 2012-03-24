@@ -1,5 +1,8 @@
 Revision history for Perl extension GIS::Distance::Fast.
 
+0.07      2012-03-24
+ - Release with Dist::Zilla.
+
 0.06 : 2010-02-02
  - Require GIS::Distance 0.07 for Any::Moose support.
  - Use Any::Moose.

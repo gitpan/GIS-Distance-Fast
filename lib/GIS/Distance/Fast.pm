@@ -1,4 +1,9 @@
 package GIS::Distance::Fast;
+{
+  $GIS::Distance::Fast::VERSION = '0.07';
+}
+use strict;
+use warnings;
 
 =head1 NAME
 
@@ -18,20 +23,17 @@ use the ::Fast formulas when they are available.
 
 =cut
 
-use strict;
-use warnings;
-
-our $VERSION = '0.06';
 our @ISA;
+our $VERSION;
 
 eval {
-   require XSLoader;
-   XSLoader::load('GIS::Distance::Fast', $VERSION);
-   1;
+    require XSLoader;
+    XSLoader::load('GIS::Distance::Fast', $VERSION);
+    1;
 } or do {
-   require DynaLoader;
-   push @ISA, 'DynaLoader';
-   bootstrap GIS::Distance::Fast $VERSION;
+    require DynaLoader;
+    push @ISA, 'DynaLoader';
+    bootstrap GIS::Distance::Fast $VERSION;
 };
 
 1;

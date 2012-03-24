@@ -1,4 +1,7 @@
 package GIS::Distance::Formula::Cosine::Fast;
+{
+  $GIS::Distance::Formula::Cosine::Fast::VERSION = '0.07';
+}
 
 =head1 NAME
 

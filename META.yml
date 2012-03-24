@@ -1,28 +1,21 @@
 ---
 abstract: 'C implementation of GIS::Distance formulas.'
 author:
-  - 'Aran Clary Deltac <bluefeet@cpan.org>'
+  - 'Aran Deltac <bluefeet@gmail.com>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
-  Test::More: 0.94
+  Test::Simple: 0.94
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 0.91'
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300010, CPAN::Meta::Converter version 2.120630'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: GIS-Distance-Fast
-no_index:
-  directory:
-    - inc
-    - t
 requires:
   GIS::Distance: 0.07
-  perl: 5.8.3
 resources:
-  homepage: http://github.com/bluefeet/gis-distance-fast/tree
-  license: http://dev.perl.org/licenses/
-  repository: git://github.com/bluefeet/gis-distance-fast.git
-version: 0.06
+  bugtracker: https://github.com/bluefeet/GIS-Distance-Fast/issues
+  repository: git://github.com/bluefeet/GIS-Distance-Fast.git
+version: 0.07
